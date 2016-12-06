@@ -603,7 +603,7 @@ CREATE TABLE tx_cal_cache (
     identifier varchar(128) DEFAULT '' NOT NULL,
     content text NOT NULL,
 	crdate int(11) DEFAULT '0' NOT NULL,
-	lifetime int(11) DEFAULT '0' NOT NULL,    
+	lifetime int(11) unsigned DEFAULT '0' NOT NULL,    
   	PRIMARY KEY (id),
   	KEY cache_id (identifier)
 ) ENGINE=InnoDB;
