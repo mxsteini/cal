@@ -1,0 +1,26 @@
+{
+  "name": "cyz/cal",
+  "type": "typo3-cms-extension",
+  "description": "Core-functions: backendstyling, Contextconfiguration",
+  "keywords": ["typo3"],
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Cyperfection",
+      "email": "info@cyperfection.de"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": ">=6.2.0,<8.5.0",
+    "php": ">=5.4.0"
+  },
+  "replace": {
+    "cal": "self.version",
+    "cyz/cyl": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "TYPO3\\CMS\\Cal\\": "Classes"
+    }
+  }
+}
