@@ -481,7 +481,7 @@ class CreateEventView extends \TYPO3\CMS\Cal\View\FeEditingBaseView {
 				require_once (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath ('tinymce_rte') . 'pi1/class.tx_tinymce_rte_pi1.php'); // alternative RTE
 			}
 			if (! $this->RTEObj && \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded ('rtehtmlarea')) {
-				$this->RTEObj = new \TYPO3\CMS\Rtehtmlarea\Controller\FrontendRteController();
+//				$this->RTEObj = new \TYPO3\CMS\Rtehtmlarea\Controller\FrontendRteController();
 			} else if (! $this->RTEObj && \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded ('tinymce_rte')) {
 				$this->RTEObj = \TYPO3\CMS\Cal\Utility\Functions::makeInstance('tx_tinymce_rte_pi1'); // load alternative RTE
 			}
