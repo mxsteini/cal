@@ -391,7 +391,7 @@ class EventService extends \TYPO3\CMS\Cal\Service\BaseService {
 			$uidCollector = $categoryService->getUidsOfEventsWithCategories();
 			
 			if (! empty ($uidCollector)) {
-				$additionalWhere .= ' AND tx_cal_event.uid NOT IN (' . implode (',', $uidCollector) . ')';
+			//	$additionalWhere .= ' AND tx_cal_event.uid NOT IN (' . implode (',', $uidCollector) . ')';
 			}
 			$eventsWithoutCategory = $this->getEventsFromTable ($categories, $includeRecurring, $additionalWhere, $serviceKey, false, $onlyMeetingsWithoutStatus, $eventType);
 			if (! empty ($eventsWithoutCategory)) {
